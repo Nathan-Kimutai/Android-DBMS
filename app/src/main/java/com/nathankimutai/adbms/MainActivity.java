@@ -9,18 +9,19 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button scanbutton= (Button) findViewById(R.id.btn_scan);
-
-
-
-    public void scanMe(View view){
-        Intent intent = new Intent(MainActivity.this,BarcodeActivity.class);
-        startActivity(intent);
-    }
+    private Button buttonScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        buttonScan = (Button) findViewById(R.id.btn_scan);
+        buttonScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,BarcodeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
