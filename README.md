@@ -42,7 +42,7 @@ You can the add the animal which thereafter you can add to endangered animals
 ### Posting department
 ![Posting](app/src/main/resources/public/images/postdepartments.png)
 ### Getting departments
-![Get department](/src/main/res/drawable/inputvalidation.jpg)
+![Get department](/app/src/main/res/drawable/inputvalidation.jpg)
 ## Technologies used
 In the following app we used the following technologies
 * Java
