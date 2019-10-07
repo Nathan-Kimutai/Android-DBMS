@@ -28,26 +28,33 @@ git clone https://github.com/Nathan-Kimutai/Qx8re.git
 ```
 
 ## Usage
-Afer cloning the repository and changing to that directory run the following commands to launch the app
+Afer cloning the repository and changing to that directory open android studio on that directory and let the gradle finish building
+Note that this may take a longer time depending on your internet connection and the bandwith
+So you should be patient
 
-```bash
-gradle build
-gradle run
-```
-In the terminal locate the url showing your spark server
-You can navigate to [http://localhost:4567/](http://localhost:4567/) as it works with most spark appications
-You can the add the animal which thereafter you can add to endangered animals
+##Starting the app
+* To start running the app make sure that you have installed all the usb drivers required that is if you are a windows user
+* But if you are using linux or mac there is no need of installing the drivers
+* Make sure you have an android phone running atleast android 4
+* Make sure you have a usb cable to connect to your computer while debugging
+* You can also use an emulator but i prefer you use a real phone
+
+If the phone is not detected try restarting adb server on the top right corner of you screen
+
+
 
 ## Trying to login with the wrong input
-### Posting department
-![Posting](app/src/main/resources/public/images/postdepartments.png)
-### Getting departments
-![Get department](/app/src/main/res/drawable/inputvalidation.jpg)
+![Input Validation](/app/src/main/res/drawable/inputvalidation.jpg)
+
+As you can see on the above image that if you enter the wrong input the app will check for the validity of the input
+Make sure you use admin as the email in the email field to continue to the next section
+
+
 ## Technologies used
 In the following app we used the following technologies
 * Java
-* Spark
-* REST API
+* XML
+* Android Studio framework
 
 ## Contributions
 You can contribute to this project by making a pull request
