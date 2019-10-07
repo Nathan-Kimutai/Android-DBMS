@@ -32,7 +32,7 @@ Afer cloning the repository and changing to that directory open android studio o
 Note that this may take a longer time depending on your internet connection and the bandwith
 So you should be patient
 
-##Starting the app
+## Starting the app
 * To start running the app make sure that you have installed all the usb drivers required that is if you are a windows user
 * But if you are using linux or mac there is no need of installing the drivers
 * Make sure you have an android phone running atleast android 4
