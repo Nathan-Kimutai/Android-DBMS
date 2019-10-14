@@ -7,4 +7,11 @@
     <color name="viewBg">#f8f8f8</color>
     <color name="btn_disabled">#999</color>
     <color name="lbl_value">#222222</color>
+
+    <color name="dark_blue">#3023AE</color>
+    <color name="purple">#c86dd7</color>
+
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <color name="login_form_details_medium">#66ffffff</color>
 </resources>

@@ -45,13 +45,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
-        android:background="@android:color/transparent"
         android:fontFamily="sans-serif-medium"
-        android:foreground="?attr/selectableItemBackground"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="Scan QR Code"
+        android:text="Get Started"
         android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
         android:textSize="18sp" />
 
 </RelativeLayout>
