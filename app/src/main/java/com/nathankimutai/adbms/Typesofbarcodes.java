@@ -13,11 +13,17 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.zxing.Result;
+
+import org.json.JSONObject;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
@@ -111,6 +117,10 @@ public class Typesofbarcodes extends AppCompatActivity implements ZXingScannerVi
     @Override
     public void handleResult(final Result result) {
         final String scannedresult = result.getText();
+        Gson gson = new Gson();
+        String res = gson.toJson(scannedresult);
+        Toast.makeText(this, res, Toast.LENGTH_SHORT).show();
+        Log.i("MATOKEO",res);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Scanned result");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -120,11 +130,14 @@ public class Typesofbarcodes extends AppCompatActivity implements ZXingScannerVi
 
             }
         });
-        builder.setNeutralButton("Visit ", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("Post the data ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(scannedresult));
-                startActivity(intent);
+                //check if they are in the right format and if they are post them to the api endpoint
+                //and return the types of barcode acivity
+
+
+
             }
         });
         builder.setMessage(scannedresult);
