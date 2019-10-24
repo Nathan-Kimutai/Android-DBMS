@@ -17,8 +17,8 @@ public class BarcodeActivity extends AppCompatActivity {
     public void continueTo(View view){
 
         Button mButton = (Button) findViewById(R.id.button);
-        EditText useranameEditText = (EditText) findViewById(R.id.editText);
-        EditText passwordEditText = (EditText) findViewById(R.id.editText2);
+        EditText useranameEditText = (EditText) findViewById(R.id.username);
+        EditText passwordEditText = (EditText) findViewById(R.id.password);
         String username =useranameEditText.getText().toString();
         Log.i("info",username);
         if (username.equals("admin")){
