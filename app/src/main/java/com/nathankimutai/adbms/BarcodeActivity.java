@@ -20,6 +20,7 @@ public class BarcodeActivity extends AppCompatActivity {
         EditText useranameEditText = (EditText) findViewById(R.id.username);
         EditText passwordEditText = (EditText) findViewById(R.id.password);
         String username =useranameEditText.getText().toString();
+        mButton.animate().scaleX(0.5f).scaleY(0.5f).setDuration(1000);
         Log.i("info",username);
         if (username.equals("admin")){
             Intent intent = new Intent(BarcodeActivity.this,Typesofbarcodes.class);
